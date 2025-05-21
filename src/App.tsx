@@ -1,16 +1,14 @@
-import FileAdd from "@spectrum-icons/workflow/FileAdd";
 import "./App.css";
-import { Button, DropZone } from "@adobe/react-spectrum";
+import { DropZone } from "./components/drop-zone";
+import { IconInbox } from "@intentui/icons"
 
 export const App = () => {
   return (
     <div className="container w-full h-full grid place-items-center">
       <div className="flex w-full h-full">
-        <DropZone flexGrow={1}>
-          <div className="flex flex-col items-center gap-2">
-            <FileAdd size="XL" />
-            <p className="text-neutral-500 text-xs font-bold mb-4">Drop your files here</p>
-          </div>
+        <DropZone className="w-full h-full">
+          <IconInbox className="size-12 text-neutral-500" />
+          <p className="text-neutral-500">Drop files/folders here</p>
         </DropZone>
       </div>
     </div>
