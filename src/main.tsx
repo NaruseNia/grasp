@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import { App } from "./App";
+import { defaultTheme, Provider } from "@adobe/react-spectrum";
+
+import "./prelude.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Provider theme={defaultTheme}>
+      <App />
+    </Provider>
   </React.StrictMode>,
 );
