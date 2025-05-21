@@ -13,8 +13,11 @@
     "windows": [
       {
         "title": "grasp",
-        "width": 800,
-        "height": 600
+        "width": 450,
+        "height": 280,
+        "resizable": false,
+        "decorations": false,
+        "titleBarStyle": "Transparent"
       }
     ],
     "security": {

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@adobe/react-spectrum": "^3.42.0",
+    "@spectrum-icons/workflow": "^4.2.21",
     "@tailwindcss/vite": "^4.1.7",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
