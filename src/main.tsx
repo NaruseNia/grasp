@@ -9,10 +9,12 @@ import { ThemeProvider } from "./lib/theme-provider";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark">
-      <TitleBar />
-      <main className="w-full h-full">
-        <App />
-      </main>
+      <div className="flex flex-col h-full">
+        <TitleBar />
+        <main className="grow w-full h-full">
+          <App />
+        </main>
+      </div>
     </ThemeProvider>
   </React.StrictMode>,
 );
